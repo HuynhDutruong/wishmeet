@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>WishMeet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="video-grid"></div>
+
+  <div id="controls">
+    <button id="btn-toggle-audio">🔇 Mic</button>
+    <button id="btn-toggle-video">🎥 Video</button>
+    <button id="btn-share-screen">🖥️ Chia sẻ màn hình</button>
+    <button id="btn-raise-hand">✋ Xin phát biểu</button>
+    <button id="btn-vote">🗳️ Vote</button>
+  </div>
+
+  <div id="vote-panel" hidden>
+    <p>Bạn chọn:</p>
+    <button data-vote="yes">✅ Tán thành</button>
+    <button data-vote="no">❌ Không tán thành</button>
+    <button data-vote="neutral">⚪ Phiếu trắng</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://unpkg.com/peerjs@1.3.2/dist/peerjs.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
